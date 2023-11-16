@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+/*CSS for Header start*/
+.page-header {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 131px 0 138px;
+  z-index: 1;
+}
+
+.page-header-bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+/*CSS for Header end*/
+
+/*CSS for All page start*/
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 80px 50px 0 30px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 990px) {
+  .body-container {
+    flex-direction: column;
+    padding: unset;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/*CSS for content Strat*/
+.page-content {
+  vertical-align: top;
+  text-align: center;
+  width: 55%;
+  margin-top: 10px;
+}
+
+@media (max-width: 990px) {
+  .page-content {
+    width: 78vw;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-content {
+    width: 85vw;
+  }
+}
+
+.img-main {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.caption {
+  display: block;
+  text-align: left;
+  line-height: 25px;
+  color: #6c6b6f;
+  font-family: "Raleway", sans-serif;
+}
+.img-container {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.img-icon {
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  width: 6vw;
+  height: 6vw;
+  font-size: 4vw;
+  background-color: #fbb61d;
+  z-index: 2;
+  text-align: center;
+  line-height: 7vw;
+  border-radius: 6px;
+}
+h3[type="text-titel"] {
+  color: black;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.table-titel {
+  color: black;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.border {
+  border: 1px solid #c7c5c5;
+  font-family: "Raleway", sans-serif;
+  border-collapse: collapse;
+  padding: 12px;
+  color: black;
+  font-size: 1.4vw;
+}
+tr:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.img-table {
+  /* opacity: 0.5; This code not Work*/
+  opacity: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.table-titel {
+  font-weight: bold;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+.page-content {
+  .photo-content {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .photo-content-col {
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .table-style {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+  @media (max-width: 990px) {
+    .photo-content {
+      display: block;
+    }
+    .photo-content-col {
+      margin-top: 10px;
+    }
+  }
+  .caption-list {
+    list-style-type: square;
+    color: #6c6b6f;
+    text-align: left;
+    margin-left: 50px;
+    line-height: 1.9;
+    font-size: 18px;
+  }
+}
+
+/*for metaxakan-kxmindr page CSS Add"*/

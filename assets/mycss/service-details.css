@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+.container-menu {
+  width: 30%;
+}
+
+@media (max-width: 990px) {
+  .container-menu {
+    width: 92%;
+    /* margin-left: 10%; */
+  }
+}
+
+@media (max-width: 900px) {
+  .container-menu ul {
+    margin-left: unset !important;
+  }
+}
+
+.container-menu ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.container-menu ul li {
+  width: 85%;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fbb61d;
+  overflow: hidden;
+}
+
+.container-menu ul li a {
+  width: 100%;
+  font-weight: 800;
+  display: block;
+  color: #12283b;
+  height: 60px;
+  padding: 22px 40px 15px;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-align: left;
+  line-height: 0.8;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1vw;
+}
+
+@media (max-width: 990px) {
+  .container-menu ul li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .container-menu ul li a {
+    font-size: 2.6vw;
+  }
+}
+@media (max-width: 500px) {
+  .container-menu ul li a {
+    font-size: 3.2vw;
+  }
+}
+
+.container-menu ul li a:hover {
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fcfafa;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #12283b !important;
+  color: #ffffff !important;
+}
+
+.container-menu ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background-color: #12283b;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.container-menu ul li a:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.container-menu ul li a span {
+  float: right;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 1vw;
+}
+@media (max-width: 990px) {
+  .container-menu ul li a span {
+    font-size: 2.6vw;
+  }
+}
+@media (max-width: 500px) {
+  .container-menu ul li a span {
+    font-size: 3.2vw;
+  }
+}
+
+.menu-line {
+  width: 85%;
+  color: #12283b;
+  background-color: #12283b;
+  height: 5px;
+  border-radius: 9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 990px) {
+  .menu-line {
+    width: 100%;
+  }
+}
